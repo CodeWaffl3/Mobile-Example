@@ -23,12 +23,13 @@ img {
   display: flex;
   align-items: flex-start;
   text-align: center;
+  flex-direction: column;
   color: white;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
 }
 
 .banner h1{
-  position: absolute;
+  position: relative;
   top: 200px;
   width: 70%;
   left: 50%;
@@ -71,4 +72,19 @@ span.ripple {
   transform: scale(0);
   animation: ripple 0.75s linear;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 40em) {
+  img{
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .banner h1{
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: 800;
+    font-size: 2rem;
+  }
 }

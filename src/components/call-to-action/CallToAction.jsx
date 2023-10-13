@@ -2,11 +2,11 @@ import React from 'react'
 import { createRipples } from '../../utils/button'
 
 
+
 const style = {
-    position: 'absolute',
+    position: 'relative',
     top: '45%',
     left: '50%',
-    transform: 'translate(-50%, -50%)',
     padding: '20px 40px',
     backgroundColor: 'var(--main-color)',
     borderRadius: '10px',
